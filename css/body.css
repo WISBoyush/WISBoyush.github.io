@@ -52,4 +52,10 @@
   height: 45px;
   border-radius: 3px;
   border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.body__main-content__stock-btn__button:hover{
+background-color: rgb(209, 12, 71);
+transition: all 0.3s ease-in-out;
 }
