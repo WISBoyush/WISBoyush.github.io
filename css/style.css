@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body__main-content,
+.body__slider-content{
+  display: inline-flex;
+}
+table{
+  height: 100%;
+}
+table td.header{
+  width: 50%;
+}
+table td.slider{
+  width: 50%;
+}

@@ -1,0 +1,73 @@
+@font-face{
+  font-family: 'Decima Mono X';
+  src: url('../fonts/Decima/DecimaMonoX.ttf') format('truetype'),
+  url('../fonts/Decima/DecimaMonoX.woff') format("woff"),
+  url('../fonts/Decima/DecimaMonoX.woff2') format("woff2");
+}
+@font-face {
+  font-family: 'Cera Pro Regular';
+  src: url('../fonts/CeraPro/CeraPro-Regular.woff') format('woff'),
+  url('../fonts/CeraPro/CeraPro-Regular.ttf') format('truetype');
+  }
+
+header{
+  display: flex;
+  min-height: 70px;
+  /* border: 2px solid red; */
+  width: 50%;
+  justify-content: space-between;
+  position: fixed;
+  text-align: center;  
+  padding: 20px;
+}
+.header__logo{
+  display: inline-flex;
+  align-self: center;
+}
+
+.header__logo__icon img{
+  width: 70px;
+  height: 57px;
+}
+
+.header__logo__city{
+  font-family:'Decima Mono X';
+  font-size: 15px;
+  align-self: center;
+}
+
+.header__nav{
+  align-self: center;
+}
+
+
+.header__nav li{
+  display: inline;
+  list-style: none;
+  padding-right: 10px;
+  font-family: 'Cera Pro Regular';
+  font-size: 14px;
+}
+
+.header__menu{
+  align-self: center;
+}
+
+.header__menu__icon,
+.header__menu__phone{
+  display: inline-block;
+  padding-right: 10px;
+}
+.header__menu__phone span{
+  font-family: 'Cera Pro Regular';
+  font-size: 14px;
+}
+
+.header__menu__icon img{
+  width: 30px;
+  height: 18px;
+  z-index: 5;
+}
+.header__menu__icon:hover{
+  cursor: pointer;
+}

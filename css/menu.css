@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Cera Pro Regular';
+  src: url('../fonts/CeraPro/CeraPro-Regular.woff') format('woff'),
+  url('../fonts/CeraPro/CeraPro-Regular.ttf') format('truetype');
+  }
+
+.menu{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#d80808, #e60764);
+  z-index: 3;
+  text-align: center;
+  color: aliceblue;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}
+
+.menu._active{
+  transform: translateY(0);
+  opacity: 1;
+  transition: all .7s ease-in-out;
+}
+
+.menu__close-btn{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 90%;
+  bottom: 5%;
+}
+
+.menu__close-btn:hover{
+  cursor: pointer;
+}
+
+.menu__close-btn span{
+  width: 40px;
+  height: 2px;
+  background-color: antiquewhite;
+  z-index: 4;
+  position: absolute;
+  top: 50%;
+  right: 25%;
+}
+
+.menu__close-btn span:first-of-type{
+  
+  transform: rotate(45deg);
+
+}
+.menu__close-btn span:nth-of-type(2){
+  transform: rotate(-45deg);
+}
+
+.menu__title{
+  font-family: "Arial Unicode MS", Arial, sans-serif;
+}
+.menu__title p:first-of-type{
+  font-size: 36pt;
+  font-weight: bold;
+}
+
+.menu__title p:nth-of-type(2){
+  font-size: 14pt;
+}
+
+
+.menu > div{
+  margin-bottom: 40px;
+}
+
+
+.menu__list{
+  list-style: none;
+}
+.menu__list li,
+.menu__contacts li{
+  margin-bottom: 10px;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.menu__contacts ul li:nth-last-of-type(1) a img{
+  width: 40px;
+  height: 40px;
+}
+
+.menu__entry a{
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.menu__entry a, .menu__entry a:link,
+.menu__list li a, .menu__list li a:link,
+.menu__contacts li a, .menu__contacts li a:link{
+  color: aliceblue;
+  text-decoration: none;
+  font-family: "Arial Unicode MS", Arial, sans-serif;
+}
+
+.menu__entry a:hover,
+.menu__list li a:hover{
+  color: aliceblue;
+  border-bottom: 2px solid aliceblue;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}

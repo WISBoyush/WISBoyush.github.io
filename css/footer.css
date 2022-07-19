@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Cera Pro Regular';
+  src: url('../fonts/CeraPro/CeraPro-Regular.woff') format('woff'),
+  url('../fonts/CeraPro/CeraPro-Regular.ttf') format('truetype');
+  }
+
+footer{
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 5px;
+}
+
+.contact-icon{
+  width: 15px;
+  height: 12px;
+  margin-right: 3px;
+}
+
+.footer__privacy p a{
+  font-family: 'Cera Pro Regular';
+}
+.footer__privacy p a:link,
+.footer__privacy p a:hover{
+  text-decoration: none;
+  color: #696B6C;
+  font-size: 10px;
+}

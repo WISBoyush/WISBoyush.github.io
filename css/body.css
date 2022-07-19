@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Cera Pro Regular';
+  src: url('../fonts/CeraPro/CeraPro-Regular.woff') format('woff'),
+  url('../fonts/CeraPro/CeraPro-Regular.ttf') format('truetype');
+  }
+
+
+
+.body__main-content{
+  width: 100%;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.body__main-content__container{
+  width: 40%;
+  margin: auto;
+
+}
+
+.body__main-content__container > div :not(.body__main-content__stock-btn__button){
+  margin-bottom: 40px;
+}
+
+.body__main-content__greeting{
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  width: 100%;
+  text-align: center;
+}
+
+.body__main-content__greeting h1{
+  font-family: "Arial Unicode MS", Arial, sans-serif;
+  font-size: 40px;
+  padding: 40px 0;
+}
+
+
+.body__main-content__description p{
+  font-family: "Arial Unicode MS", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+.body__main-content__stock-btn__button{
+  width: 100%;
+  color: antiquewhite;
+  background-color: #333030;
+  height: 45px;
+  border-radius: 3px;
+  border: none;
+}
