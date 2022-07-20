@@ -13,10 +13,8 @@
 header{
   display: flex;
   min-height: 70px;
-  /* border: 2px solid red; */
-  width: 50%;
+  width: 100%;
   justify-content: space-between;
-  position: fixed;
   text-align: center;  
   padding: 20px;
 }
@@ -40,13 +38,18 @@ header{
   align-self: center;
 }
 
-
 .header__nav li{
   display: inline;
   list-style: none;
   padding-right: 10px;
   font-family: 'Cera Pro Regular';
   font-size: 14px;
+}
+
+.header__nav li a:link{
+  color: rgb(6, 6, 7);
+  text-decoration: none;
+  font-family: 'Cera Pro Regular';
 }
 
 .header__menu{
@@ -61,6 +64,11 @@ header{
 .header__menu__phone span{
   font-family: 'Cera Pro Regular';
   font-size: 14px;
+}
+
+.header__menu__phone span a:link{
+  color: rgb(13, 14, 15);
+  text-decoration: none;
 }
 
 .header__menu__icon img{

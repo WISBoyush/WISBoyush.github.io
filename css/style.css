@@ -2,18 +2,32 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+}
+:focus{
+  outline: 2px solid black;
 }
 
 .body__main-content,
 .body__slider-content{
   display: inline-flex;
 }
-table{
-  height: 100%;
+
+
+
+.wrapper{
+  display: flex;
+  flex-direction: row-reverse;
 }
-table td.header{
-  width: 50%;
+
+
+.wrapper > div{
+  flex-basis: 50%;
 }
-table td.slider{
-  width: 50%;
+
+
+.wrapper__left-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
